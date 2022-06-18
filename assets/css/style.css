@@ -1,14 +1,10 @@
-/* Create CSS variables at the root of the document to be used throughout the style sheet */
+
 :root {
-    --white: #fff;
-    --dark-blue: #13293d;
-    --tan: #d8a47f;
-    /* You can use it with any value that is repeated throughout the sheet */
-    --border-radius: 50px;
+   
   }
   
   body {
-    font-size: 16px;
+    margin: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -16,29 +12,75 @@
   }
   
   h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 10px;
-  }
-  
+    font-family: 'Fredoka One', cursive;
+    border: dashed;
+    width:fit-content;
+    padding:1%;  
+  } 
+
   h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 10px;
   }
+
+main{
+    position: relative;
+    flex-direction: row;
+}
+
+.aboutmeheading{
+    display: inline-flex;
+    justify-content: flex-start;
+  }
+
+div{
+    display: inline-block;
+    width: 100%;
+}
+
+  .aboutmedetails{
+    display: flex;
+    align-items: center;
+}
+ 
+
   
+#bannerimage { 
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+  }
+
   header {
-    padding: 40px;
-    text-align: center;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    text-align:left;
     background: var(--dark-blue);
     color: var(--white);
   }
 
   header h1,h2 {
-    text-align:left;
+    padding:1%;
+    display: block;
   }
   
   nav {
     display: flex;
-    background-color: var(--tan);
+    text-align:left;  
+  }
+
+  nav ul {
+   display: flex;
+   justify-content: space-between;
+    min-width: 300px;
+  }
+
+  ul a {
+    margin:0% 1% 0% 1%;
   }
   
   nav a {
@@ -49,8 +91,8 @@
   }
   
   nav a:hover {
-    background-color: var(--white);
-    color: var(--dark-blue);
+    background-color: grey;
+    color: white;
   }
   
   main {
@@ -89,7 +131,6 @@
   }
   
   .card > header {
-    /* This is the same as `border-radius: 50px 50px 0 0 */
     border-radius: var(--border-radius) var(--border-radius) 0 0;
     padding: 20px;
   }
@@ -108,4 +149,5 @@
       flex-direction: column;
     }
   }
+  
   
