@@ -1,16 +1,21 @@
-
 :root {
    
   }
-  
+
+  * {
+    color: black;
+
+  } 
+
   body {
-    margin: 0;
     display: flex;
+    margin: 0;
     flex-direction: column;
     min-height: 100vh;
     justify-content: flex-start;
   }
   
+  /* Default Heading Settings */
   h1 {
     font-size: 2rem;
     margin-bottom: 10px;
@@ -24,18 +29,23 @@
     font-size: 1rem;
     margin-bottom: 10px;
   }
+  /* End of Default Heading Settings */
 
-main{
-    position: relative;
-    flex-direction: row;
-}
+  /* Information Segments */
+  section {
+    
+  }
+  
+  article {
+    display: flex;
 
-.aboutmeheading{
+  }
+  .aboutmeheading{
     display: inline-flex;
     justify-content: flex-start;
   }
 
-div{
+  div{
     display: inline-block;
     width: 100%;
 }
@@ -45,9 +55,7 @@ div{
     align-items: center;
 }
  
-
-  
-#bannerimage { 
+  #bannerimage { 
     width: 100%;
     height: auto;
     opacity: 0.3;
@@ -94,55 +102,7 @@ div{
     background-color: grey;
     color: white;
   }
-  
-  main {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  footer {
-    width: 100%;
-    bottom: 0;
-    padding: 20px;
-    text-align: center;
-    background: var(--dark-blue);
-    color: var(--white);
-    margin-top: auto;
-  }
-  
-  .products {
-    flex: 1;
-    background-color: var(--white);
-    padding: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  
-  .card {
-    border-style: solid;
-    border-width: 1px;
-    border-radius: var(--border-radius);
-    padding: 10px;
-    flex: 0 0 300px;
-    transform: rotate(8deg);
-    box-shadow: 10px 10px 5px #aaaaaa;
-    margin: 20px;
-  }
-  
-  .card > header {
-    border-radius: var(--border-radius) var(--border-radius) 0 0;
-    padding: 20px;
-  }
-  
-  .card > p {
-    text-align: center;
-  }
-  
-  .card > img {
-    width: 100%;
-  }
-  
+
   @media screen and (max-width: 768px) {
     main,
     nav {
