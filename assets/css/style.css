@@ -20,7 +20,6 @@
     font-size: 2rem;
     font-family: 'Fredoka One', cursive;
     flex-basis:auto;
-    text-align: right;
   } 
   
   h2 {
@@ -41,6 +40,7 @@
   article {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   article h2,h3,p {
@@ -55,7 +55,7 @@
   }
 
   .aboutmedetails{
-    display: flex;
+    flex-shrink: 1;
     align-items: center;
    
 }
@@ -68,28 +68,24 @@
 
   header {
     display:flex;
-    justify-content:space-between;
+    flex-wrap:wrap;
+    justify-content: center;
     align-items: center;
     padding: 1%;
-    text-align:left;
-    background: var(--dark-blue);
-    color: var(--white);
   }
 
   header h1,h2 {
     padding:1%;
-    display: block;
-  }
+    }
   
-  nav {
-    display: flex;
-    text-align:left;  
+  nav {  
   }
 
   nav ul {
    display: flex;
-   justify-content: space-between;
-    min-width: 300px;
+   justify-content: flex-end
+   flex;
+   min-width: 300px;
   }
 
   ul a {
