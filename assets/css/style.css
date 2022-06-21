@@ -5,6 +5,7 @@
 * a{
   border: none;
   text-decoration:none;
+  color:#000000;
 }
 
 body {
@@ -34,24 +35,27 @@ body {
   }
   
   nav a {
-    color: var(--dark-blue);
+    
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
     border-radius: 10px;
     transition: 200ms ease-in-out;
+   
   }
   
   nav a:hover {
     background-color: grey;
     transition: 200ms ease-in-out;
+    color:white;
   }
   
   nav li{
     height: 100%;
-    width: 100%;
+    width: fit-content;
     transition: 200ms ease-in-out;
     display:flex;
+    
   }
   
   nav li:hover{
@@ -84,7 +88,10 @@ body {
       min-width: fit-content;  
     }
 
-    #flag{font-size: 24px;}
+    #flag{
+      font-size: 24px;
+      transform: translate(0, -5px)
+    }
    /* Headers */
 
   /* BODY */
@@ -134,11 +141,9 @@ body {
   }
 
   .sectionlabel {
+    /* flex:1 0 200px; */
     padding: 8px;
     border: dashed;
-   
-   
-    
   }
 
   .aboutmedetails{
@@ -212,16 +217,38 @@ body {
   .card:hover{
     opacity:calc(100%);
     box-shadow: 2px 2px 4px #000000;
-    opacity:calc(100%);
     transition: ease-in-out 200ms;
   }
 
   .card a:hover{
     color: blue;
   }
+  
+  a:visited {
+    color: none;
+  }
 
     /* END WORK */
 
+/* Start contact */
+.contact {
+  display:flex;
+  justify-content: space-between;
+  width: 100%
+}
+.contact ul{
+  display:flex;
+  justify-content: space-between;
+}
+.contact a{
+  display: flex;
+  flex-wrap: wrap;;
+}
+.contact li{
+  flex: 1 0 100px;
+}
+
+/* End contact */
 
   @media screen and (max-width: 768px) {
     header {
