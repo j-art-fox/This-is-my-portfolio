@@ -2,9 +2,10 @@
   
 }
 
-* {
-  color: black;
-} 
+* a{
+  border: none;
+  text-decoration:none;
+}
 
 body {
   display: flex;
@@ -133,6 +134,9 @@ body {
   .sectionlabel {
     padding: 8px;
     border: dashed;
+    position: sticky;
+    top:0px;
+    
   }
 
   .aboutmedetails{
@@ -148,16 +152,27 @@ body {
   /* END ABOUT ME */
 
   /* BEGIN WORK */
+  #cologne img{
+    filter: grayscale(100%);
+  }
+  
   .cardcontainer{
     display:flex;
     flex-wrap: wrap;
   }
-
+  
   .card{
     position: relative;
     flex: 1 0 300px;
     padding: 10px;
-    text-align: center;
+    text-align: left;
+    height:fit-content;
+    opacity:calc(75%);
+    transition: ease-in-out 200ms;
+  }
+
+  h4{
+    color:white !important;
   }
 
   .card h4{
@@ -172,8 +187,38 @@ body {
   .card img{
     width: 100%;
     min-width: 40%;
+    
   }
-  /* END WORK */
+  .card p{
+    position: absolute;
+    top: 52px;
+    left:2px;
+    color: rgb(44, 44, 44);
+    font-size: larger;
+    background-color: aquamarine;
+    padding: 4px;
+    transform: translate(16px, 0);
+    text-align: left;
+    max-width: fit-content;
+
+  }
+
+  .card span{
+    font-weight: bolder;
+  }
+
+  .card:hover{
+    opacity:calc(100%);
+    box-shadow: 2px 2px 4px #000000;
+    opacity:calc(100%);
+    transition: ease-in-out 200ms;
+  }
+
+  .card a:hover{
+    color: blue;
+  }
+
+    /* END WORK */
 
 
   @media screen and (max-width: 768px) {
@@ -182,7 +227,9 @@ body {
     }
     .imagelabel {
       font-size: 2rem;
-    main, nav {
+    }
+   
+      main, nav {
       flex-direction: column;
       justify-content: center;
     }
