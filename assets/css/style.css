@@ -4,7 +4,6 @@
 
   * {
     color: black;
-
   } 
 
   body {
@@ -25,15 +24,14 @@
   h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    min-width: fit-content;
-    
-    
+    min-width: fit-content;  
   }
   /* End of Default Heading Settings */
-/* Banner image */
+
+  /* Banner image */
   /* Information Segments */
   section {
-    border-bottom: solid 2px grey;
+    padding: 0 16px;
     
   }
   
@@ -49,17 +47,33 @@
   }
 
   .headings{
-   margin: 1%;
-   padding: 0 1% 0 1%;
-   border: dashed;
+    flex: 1 0 200px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 16px;
+  }
+
+  .sectionlabel {
+    padding: 8px;
+    border: dashed;
   }
 
   .aboutmedetails{
     flex-shrink: 1;
     align-items: center;
-   
-}
- 
+  }
+  .imagewrapper{
+    position:relative;
+  }
+
+  .imagelabel {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+
   #bannerimage { 
     width: 100%;
     height: auto;
@@ -69,7 +83,7 @@
   header {
     display:flex;
     flex-wrap:wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 1%;
   }
@@ -81,10 +95,14 @@
   nav {  
   }
 
-  nav ul {
+  .divider {
+    border-bottom: solid 2px grey;
+    width: 100%;
+  }
+  
+  .mainnav {
    display: flex;
-   justify-content: flex-end
-   flex;
+   justify-content: center;
    min-width: 300px;
   }
 
@@ -97,21 +115,38 @@
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
+    border-radius: 10px;
+    transition: 200ms ease-in-out;
   }
   
   nav a:hover {
     background-color: grey;
-    color: white;
+    transition: 200ms ease-in-out;
+    }
+
+  nav li{
+    height: 100%;
+    width: 100%;
+    transition: 200ms ease-in-out;
+    display:flex;
   }
+
+  nav li:hover{
+    color: white;
+    transition: 200ms ease-in-out;
+   }
 
   header h1:hover {
     cursor:pointer;
   }
 
   @media screen and (max-width: 768px) {
-    main,
-    nav {
+    header {
+      flex-direction:column;
+    }
+    main, nav {
       flex-direction: column;
+      justify-content: center;
     }
   }
   
