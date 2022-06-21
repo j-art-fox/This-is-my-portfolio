@@ -1,46 +1,123 @@
 :root {
-   
-  }
+  
+}
 
-  * {
-    color: black;
-  } 
+* {
+  color: black;
+} 
 
-  body {
-    display: flex;
-    margin: 0;
+body {
+  display: flex;
+  justify-content: flex-start;
     flex-direction: column;
+    margin: 0;
     min-height: 100vh;
-    justify-content: flex-start;
   }
   
-  /* Default Heading Settings */
+  /* Beginning of Header */
+  header {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+  }
+  
+  header h1{
+    border: dashed;
+    padding: 8px;
+  } 
+  
+  ul a {
+    margin:0% 1% 0% 1%;
+  }
+  
+  nav a {
+    color: var(--dark-blue);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    transition: 200ms ease-in-out;
+  }
+  
+  nav a:hover {
+    background-color: grey;
+    transition: 200ms ease-in-out;
+  }
+  
+  nav li{
+    height: 100%;
+    width: 100%;
+    transition: 200ms ease-in-out;
+    display:flex;
+  }
+  
+  nav li:hover{
+    color: white;
+    transition: 200ms ease-in-out;
+  }
+  
+  header h1:hover {
+    cursor:pointer;
+  }
+  
+  .mainnav {
+   display: flex;
+   justify-content: center;
+   min-width: 300px;
+  }
+  
+  /* End of header */
+  
+  /* Headers */
   h1 {
     font-size: 2rem;
     font-family: 'Fredoka One', cursive;
     flex-basis:auto;
   } 
-  
-  h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    min-width: fit-content;  
-  }
-  /* End of Default Heading Settings */
-
-  /* Banner image */
-  /* Information Segments */
-  section {
-    padding: 0 16px;
     
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      min-width: fit-content;  
+    }
+   /* Headers */
+
+  /* BODY */
+   section {
+    padding: 0 16px;
   }
   
   article {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 8px 0;
   }
 
+  /* Banner Details */
+  .imagewrapper{
+    position:relative;
+  }
+
+  .imagelabel {
+    position:absolute;
+    font-size: 4rem;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #bannerimage { 
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+  }
+  /* END BANNER DETAILS */
+
+   /* ABOUT ME */
   article h2,h3,p {
     margin:1%;
     right: 5%;
@@ -62,88 +139,49 @@
     flex-shrink: 1;
     align-items: center;
   }
-  .imagewrapper{
-    position:relative;
-  }
 
-  .imagelabel {
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-  }
-
-  #bannerimage { 
-    width: 100%;
-    height: auto;
-    opacity: 0.3;
-  }
-
-  header {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1%;
-  }
-
-  header h1,h2 {
-    padding:1%;
-    }
-  
-  nav {  
-  }
 
   .divider {
     border-bottom: solid 2px grey;
     width: 100%;
   }
-  
-  .mainnav {
-   display: flex;
-   justify-content: center;
-   min-width: 300px;
-  }
+  /* END ABOUT ME */
 
-  ul a {
-    margin:0% 1% 0% 1%;
-  }
-  
-  nav a {
-    color: var(--dark-blue);
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 10px;
-    transition: 200ms ease-in-out;
-  }
-  
-  nav a:hover {
-    background-color: grey;
-    transition: 200ms ease-in-out;
-    }
-
-  nav li{
-    height: 100%;
-    width: 100%;
-    transition: 200ms ease-in-out;
+  /* BEGIN WORK */
+  .cardcontainer{
     display:flex;
+    flex-wrap: wrap;
   }
 
-  nav li:hover{
+  .card{
+    position: relative;
+    flex: 1 0 300px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .card h4{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    padding:16px;
+    background-color: rgb(0, 119, 119);
     color: white;
-    transition: 200ms ease-in-out;
-   }
-
-  header h1:hover {
-    cursor:pointer;
   }
+
+  .card img{
+    width: 100%;
+    min-width: 40%;
+  }
+  /* END WORK */
+
 
   @media screen and (max-width: 768px) {
     header {
       flex-direction:column;
     }
+    .imagelabel {
+      font-size: 2rem;
     main, nav {
       flex-direction: column;
       justify-content: center;
