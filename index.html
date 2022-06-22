@@ -16,26 +16,28 @@
     <title>Home-Jordan Ring-Sakabe</title>
 </head>
 <body>
-    <header>
+    <header id="top">
         <h1>J.R-S</h1>
-        <nav>
+        <nav id="main-nav">
             <ul class="mainnav">
-                <li><a href="#aboutme">About</a></li>
-                <li><a href="#aboutme">Contact</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#aboutme">Resume</a></li>
-                <li><a id="flag" href="/jpnsindex.html">🇯🇵</a></li>
+                <li class="main-menu-items"><a id="flag" href="/jpnsindex.html">🇯🇵</a></li>
+                <li class="main-menu-items"><a href="#aboutme">About</a></li>
+                <li class="main-menu-items"><a href="#work">Work</a></li>
+                <li class="main-menu-items"><a href="#contact">Contact</a></li>
+                <li class="main-menu-items"><a href="#">Resume</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <figure class="imagewrapper">
+        <!-- BANNER IMAGE -->
+        <figure class="image-wrapper">
             <label class="imagelabel">はじめまして</label>
             <img id="bannerimage" src="./assets/images/glassroof.jpg" alt="Nagoya Concert Hall">
         </figure>
-
-        <!-- BEGIN About Me Section -->
+        <!-- END BANNER -->
+        
         <section class="infosegments">
+            <!-- BEGIN About Me Section -->
             <article>    
                 <div class="headings">
                     <h1 id="aboutme" class="sectionlabel">About Me</h1>
@@ -49,8 +51,9 @@
                     </p>
                 </div>
             </article>
-                <div class="divider">
-                </div>
+                
+            <div class="divider">
+            </div>
             
          <!-- END About Me Section -->
 
@@ -59,60 +62,84 @@
                 <div class="headings">
                     <h1 id="work" class="sectionlabel">Work</h1>
                 </div>
-            <div class="cardcontainer">
-                <a href="#"><div id="cologne" class="card">
-                    <img src="./assets/images/In Cologne.JPG" alt="Cologne">
-                    <h4>Cologne</h4>
-                    <p><span>Tags:</span> <a href="#">sleek,</a>
-                        <a href="#">metropolitan,</a><a href="#"> professional</a></p>
-                </div></a>
-                <a href="#"><div class="card">
-                    <h4>Paris</h4>
-                    <img src="./assets/images/louvre1.jpg" alt="Paris">
-                    <p><span>Tags:</span> <a href="#">vintage, </a>
-                        <a href="#">rustic,</a><a href="#"> classy</a></p>
-                </div> </a>
-                <a href="#"><div class="card">
-                    <h4>Shimokitazawa</h4>
-                    <img src="./assets/images/incafe.JPG" alt="Shimokitazawa">
-                    <p><span>Tags:</span> <a href="#">cafe, </a>
-                        <a href="#"> cozy,</a><a href="#"> pleasant</a></p>
-                </div> </a>
-                <a href="#"><div class="card">
-                    <h4>Amsterdam</h4>
-                    <img src="./assets/images/amsterdam1.jpg" alt="Amsterdam">
-                    <p><span>Tags:</span> <a href="#">minimalist, </a>
-                        <a href="#"> modern,</a><a href="#"> professional</a></p>
-                    </div> </a>
-            </div>
-            </article>
-                <div class="divider">
+                <div class="cardcontainer">
+                    <a href="#">
+                        <div id="cologne" class="card">
+                            <img src="./assets/images/In Cologne.JPG" alt="Cologne">
+                            <h4>Cologne</h4>
+                            <p>
+                                <span>Tags:</span> 
+                                <a href="#">metropolitan,</a>
+                                <a href="#">sleek,</a>
+                                <a href="#"> professional</a>
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <h4>Paris</h4>
+                            <img src="./assets/images/louvre1.jpg" alt="Paris">
+                            <p>
+                                <span>Tags:</span>
+                                <a href="#">vintage, </a>
+                                <a href="#">rustic,</a>
+                                <a href="#"> classy</a>
+                            </p>
+                        </div> 
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <h4>Shimokitazawa</h4>
+                            <img src="./assets/images/incafe.JPG" alt="Shimokitazawa">
+                            <p>
+                                <span>Tags:</span> 
+                                <a href="#">cafe, </a>
+                                <a href="#"> cozy,</a>
+                                <a href="#"> pleasant</a>
+                            </p>
+                        </div> 
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <h4>Amsterdam</h4>
+                            <img src="./assets/images/amsterdam1.jpg" alt="Amsterdam">
+                            <p>
+                                <span>Tags:</span> 
+                                <a href="#">minimalist, </a>
+                                <a href="#"> modern,</a>
+                                <a href="#"> professional</a>
+                            </p>
+                        </div> 
+                    </a>
                 </div>
+            </article>
+            
+            <div class="divider">
+            </div>
         <!-- END My Projects Section -->
 
         <!-- BEGIN Contact Section -->
-            <article>    
-                <div class="headings">
-                    <h1 class="sectionlabel">Contact</h1>
-                </div>
-                <div class="contact">
-                    <nav>
-                        <ul>
-                            <li><a href="#">(+1)555-555-5555</a></li>
-                            <li><a href="#">email@address.com</a></li>
-                            <li><a href="#">GitHub</a></li>
-                            <li><a href="#">Resume</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </article>
-                <div class="divider">
-                </div>
+        <article id="contact">    
+            <div class="headings">
+                <h1 class="sectionlabel">Contact</h1>
+            </div>
+            <nav class="contact">
+                <ul>
+                    <li><a href="#">(+1)555-555-5555</a></li>
+                    <li><a href="#">email@address.com</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Resume</a></li>
+                </ul>
+            </nav>
+        </article>
+            <div class="divider">
+            </div>
         <!-- END Contact Section -->
       </section>
        
     </main>
     <footer>
+        <p><a href="#top">Back to top</a></p>
     </footer>
 </body>
 </html>

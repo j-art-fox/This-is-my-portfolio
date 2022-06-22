@@ -34,15 +34,18 @@ body {
     margin:0% 1% 0% 1%;
   }
   
+      /* START of Navigation Modifiers for Header and Contact section */
+  #main-nav{
+    margin: 16px;
+
+  }
   nav a {
-    
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
     border-radius: 10px;
     transition: 200ms ease-in-out;
-   
-  }
+     }
   
   nav a:hover {
     background-color: grey;
@@ -51,17 +54,15 @@ body {
   }
   
   nav li{
-    height: 100%;
     width: fit-content;
-    transition: 200ms ease-in-out;
-    display:flex;
-    
+    transition: 200ms ease-in-out;   
   }
   
   nav li:hover{
     color: white;
     transition: 200ms ease-in-out;
   }
+        /* END of Navigation Modifiers for Header and Contact section */
   
   header h1:hover {
     cursor:pointer;
@@ -69,199 +70,243 @@ body {
   
   .mainnav {
    display: flex;
-   justify-content: center;
    min-width: 300px;
+   align-items:center
+  }
+
+  #flag{
+    font-size: 24px;
+    transform: translate(0, -5px)
   }
   
   /* End of header */
   
   /* Headers */
-  h1 {
-    font-size: 2rem;
-    font-family: 'Fredoka One', cursive;
-    flex-basis:auto;
-  } 
-    
+    h1 {
+      font-size: 2rem;
+      font-family: 'Fredoka One', cursive;
+      flex-basis:auto;
+    } 
+      
     h2 {
       font-size: 1.5rem;
       margin-bottom: 10px;
       min-width: fit-content;  
     }
 
-    #flag{
-      font-size: 24px;
-      transform: translate(0, -5px)
-    }
-   /* Headers */
+  /* Headers */
 
   /* BODY */
-   section {
-    padding: 0 16px;
-  }
-  
-  article {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 0;
-  }
-
-  /* Banner Details */
-  .imagewrapper{
-    position:relative;
-  }
-
-  .imagelabel {
-    position:absolute;
-    font-size: 4rem;
-    font-family: 'Zen Maru Gothic', sans-serif;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  #bannerimage { 
-    width: 100%;
-    height: auto;
-    opacity: 0.3;
-  }
-  /* END BANNER DETAILS */
-
-   /* ABOUT ME */
-  article h2,h3,p {
-    margin:1%;
-    right: 5%;
-  }
-
-  .headings{
-    flex: 1 0 200px;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 16px;
-  }
-
-  .sectionlabel {
-    /* flex:1 0 200px; */
-    padding: 8px;
-    border: dashed;
-  }
-
-  .aboutmedetails{
-    flex-shrink: 1;
-    align-items: center;
-  }
-
-
-  .divider {
-    border-bottom: solid 2px grey;
-    width: 100%;
-  }
-  /* END ABOUT ME */
-
-  /* BEGIN WORK */
-  #cologne img{
-    filter: grayscale(100%);
-  }
-  
-  .cardcontainer{
-    display:flex;
-    flex-wrap: wrap;
-  }
-  
-  .card{
-    position: relative;
-    flex: 1 0 300px;
-    padding: 10px;
-    text-align: left;
-    height:fit-content;
-    opacity:calc(75%);
-    transition: ease-in-out 200ms;
-  }
-
-  h4{
-    color:white !important;
-  }
-
-  .card h4{
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    padding:16px;
-    background-color: rgb(0, 119, 119);
-    color: white;
-  }
-
-  .card img{
-    width: 100%;
-    min-width: 40%;
+    section {
+      padding: 0 16px;
+    }
     
-  }
-  .card p{
-    position: absolute;
-    top: 52px;
-    left:2px;
-    color: rgb(44, 44, 44);
-    font-size: larger;
-    background-color: aquamarine;
-    padding: 4px;
-    transform: translate(16px, 0);
-    text-align: left;
-    max-width: fit-content;
+    article {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+    }
 
-  }
+    /* Banner Details */
+    .image-wrapper{
+      position:relative;
+    }
 
-  .card span{
-    font-weight: bolder;
-  }
+    .imagelabel {
+      position:absolute;
+      font-size: 4rem;
+      font-family: 'Zen Maru Gothic', sans-serif;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: fit-content;
+    }
 
-  .card:hover{
-    opacity:calc(100%);
-    box-shadow: 2px 2px 4px #000000;
-    transition: ease-in-out 200ms;
-  }
+    #bannerimage { 
+      width: 100%;
+      height: auto;
+      opacity: 0.3;
+    }
+    /* END BANNER DETAILS */
 
-  .card a:hover{
-    color: blue;
+    /* ABOUT ME */
+    article h2,h3,p {
+      margin:1%;
+      right: 5%;
+    }
+
+    .headings{
+      flex: 1 0 200px;
+      margin-right: 16px;
+    }
+
+    .sectionlabel {
+      padding: 8px;
+      border: dashed;
+      width:fit-content;
+    }
+
+    .aboutmedetails{
+      flex-shrink: 1;
+      align-items: center;
+    }
+
+
+    .divider {
+      border-bottom: solid 2px grey;
+      width: 100%;
+    }
+    /* END ABOUT ME */
+
+    /* BEGIN WORK */
+    #cologne img{
+      filter: grayscale(100%);
+    }
+    
+    .cardcontainer{
+      display:flex;
+      flex-wrap: wrap;
+    }
+    
+    .card{
+      position: relative;
+      flex: 1 0 300px;
+      padding: 10px;
+      text-align: left;
+      height:fit-content;
+      opacity:calc(75%);
+      transition: ease-in-out 200ms;
+    }
+
+    h4{
+      color:white;
+    }
+
+    .card h4{
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      padding:16px;
+      background-color: rgb(0, 119, 119);
+      color: white;
+    }
+
+    .card img{
+      width: 100%;
+      min-width: 40%;
+      
+    }
+    .card p{
+      position: absolute;
+      top: 52px;
+      left:2px;
+      color: rgb(44, 44, 44);
+      font-size: larger;
+      background-color: aquamarine;
+      padding: 4px;
+      transform: translate(16px, 0);
+      text-align: left;
+      max-width:min-content;
+
+    }
+
+    .card span{
+      font-weight: bolder;
+    }
+
+    .card:hover{
+      opacity:calc(100%);
+      box-shadow: 2px 2px 4px #000000;
+      transition: ease-in-out 200ms;
+    }
+
+    .card a:hover{
+      color: blue;
+    }
+    
+    a:visited {
+      color: none;
+    }
+
+      /* END WORK */
+
+  /* Start contact */
+    .contact {
+      width: -moz-available;
+    }
+    
+    .contact ul{   
+      display:flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      
+    }
+    .contact a{
+      display: flex;
+      align-items: center;
+    }
+    .contact li{
+      flex: 1 0 100px;
+      flex-wrap:wrap;
+    }
+  /* End contact */
+  
+  /* Start FOOTER */
+  footer{
+    background: gray;
+    margin-top: 8px;
   }
   
-  a:visited {
-    color: none;
+  footer p{
+    text-align: center;
+  
   }
+  footer a{
+      color: white; 
+  }
+  footer a:hover{
+    box-shadow: #000000;
+  }
+  /* END FOOTER */
 
-    /* END WORK */
+/* END OF BODY */
 
-/* Start contact */
-.contact {
-  display:flex;
-  justify-content: space-between;
-  width: 100%
-}
-.contact ul{
-  display:flex;
-  justify-content: space-between;
-}
-.contact a{
-  display: flex;
-  flex-wrap: wrap;;
-}
-.contact li{
-  flex: 1 0 100px;
-}
-
-/* End contact */
-
+/* MEDIA QUERIES */
   @media screen and (max-width: 768px) {
+    article{
+      flex-flow:column;
+      align-items:center;
+    }
+    .headings{
+      margin:8px;
+    }
+
+    .contact{
+      width:min-content;
+    }
+
+    .headings, .aboutmedetails{
+      flex: 100%;
+    }
     header {
       flex-direction:column;
     }
     .imagelabel {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
-   
-      main, nav {
+    .mainnav{
+      flex-flow:column;
+    }
+    .mainnav li{
+      height:100%;
+      padding:8px;
+    }
+    main{
       flex-direction: column;
       justify-content: center;
+      flex-wrap:wrap;
     }
   }
+
   
   
