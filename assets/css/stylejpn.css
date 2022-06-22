@@ -30,9 +30,7 @@ body {
     padding: 8px;
   } 
   
-  ul a {
-    margin:0% 1% 0% 1%;
-  }
+ 
   
       /* START of Navigation Modifiers for Header and Contact section */
   #main-nav{
@@ -84,10 +82,17 @@ body {
   /* Headers */
     h1 {
       font-size: 2rem;
+      font-family: 'M PLUS Rounded 1c', sans-serif;
+      flex-basis:auto;
+    } 
+
+    #logo {
+      font-size: 2rem;
       font-family: 'Fredoka One', cursive;
       flex-basis:auto;
     } 
-      
+
+    
     h2 {
       font-size: 1.5rem;
       margin-bottom: 10px;
@@ -130,6 +135,10 @@ body {
     /* END BANNER DETAILS */
 
     /* ABOUT ME */
+    article h2,h3,p {
+      margin:1%;
+      right: 5%;
+    }
 
     #portfolio-picture{
       max-width: 320px;
@@ -143,11 +152,6 @@ body {
       transition: ease-in-out 200ms;
     }
 
-    article h2,h3,p {
-      margin:1%;
-      right: 5%;
-    }
-
     .headings{
       flex: 1 0 200px;
       margin-right: 16px;
@@ -156,7 +160,7 @@ body {
     .sectionlabel {
       padding: 8px;
       border: dashed;
-      width:fit-content;
+      width:max-content;
     }
 
     .aboutmedetails{
@@ -172,6 +176,10 @@ body {
     /* END ABOUT ME */
 
     /* BEGIN WORK */
+    #cologne img{
+      filter: grayscale(100%);
+    }
+    
     .cardcontainer{
       display:flex;
       flex-wrap: wrap;
@@ -236,8 +244,6 @@ body {
     a:visited {
       color: none;
     }
-
-    
 
       /* END WORK */
 

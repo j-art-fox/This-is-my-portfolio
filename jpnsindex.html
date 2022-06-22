@@ -6,50 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/stylejpn.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500&display=swap" rel="stylesheet"> 
     <title>ホーム-ジョーダン・リング-坂部</title>
 </head>
 <body>
-    <header>
-        <h1>J.R-S</h1>
-        <nav>
+    <header id="top">
+        <h1 id="logo">J.R-S</h1>
+        <nav id="main-nav">
             <ul class="mainnav">
-                <li><a href="#aboutme">ご挨拶</a></li>
-                <li><a href="#aboutme">お問合せ</a></li>
-                <li><a href="#work">ポートフォリオ</a></li>
-                <li><a href="#aboutme">履歴書</a></li>
-                <li><a id="flag" href="/index.html">🌐</a></li>
+                <li class="main-menu-items"><a id="flag" href="/index.html">🌐</a></li>
+                <li class="main-menu-items"><a href="#aboutme">ご挨拶</a></li>
+                <li class="main-menu-items"><a href="#work">ポートフォリオ</a></li>
+                <li class="main-menu-items"><a href="#contact">お問合せ</a></li>
+                <li class="main-menu-items"><a href="#">履歴書</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <figure class="imagewrapper">
+        <!-- BANNER IMAGE -->
+        <figure class="image-wrapper">
             <label class="imagelabel">はじめまして</label>
             <img id="bannerimage" src="./assets/images/glassroof.jpg" alt="Nagoya Concert Hall">
         </figure>
-
-        <!-- BEGIN About Me Section -->
+        <!-- END BANNER -->
+        
         <section class="infosegments">
+            <!-- BEGIN About Me Section -->
             <article>    
                 <div class="headings">
                     <h1 id="aboutme" class="sectionlabel">ご挨拶</h1>
                 </div>
                 <div class="aboutmedetails">
-                    <h2>ジョーダン・リング-坂部 (J. Ring-Sakabe)</h2>
+                    <img id="portfolio-picture" src="./assets/images/reception.jpg" alt="Picture of J. Ring-Sakabe">
+                    <h2>ジョーダン・リング-坂部</h2><h3>(J. Ring-Sakabe)</h3>
                     <p>私は、美的感覚と機能的な直感を備えた日英バイリンガルのウェブ開発者です。
                         高校で日本語と美術を教える中でWeb制作に出会い、視覚的な表現と論理や構文を両立させることで
                         個人と企業の目標達成を支援するために。
                     </p>
                 </div>
             </article>
-                <div class="divider">
-                </div>
+                
+            <div class="divider">
+            </div>
             
          <!-- END About Me Section -->
 
@@ -58,60 +65,84 @@
                 <div class="headings">
                     <h1 id="work" class="sectionlabel">ポートフォリオ</h1>
                 </div>
-            <div class="cardcontainer">
-                <a href="#"><div id="cologne" class="card">
-                    <img src="./assets/images/In Cologne.JPG" alt="Cologne">
-                    <h4>ケルン</h4>
-                    <p><span>Tags:</span> <a href="#">sleek,</a>
-                        <a href="#">metropolitan,</a><a href="#"> professional</a></p>
-                </div></a>
-                <a href="#"><div class="card">
-                    <h4>パリ</h4>
-                    <img src="./assets/images/louvre1.jpg" alt="Paris">
-                    <p><span>Tags:</span> <a href="#">vintage, </a>
-                        <a href="#">rustic,</a><a href="#"> classy</a></p>
-                </div> </a>
-                <a href="#"><div class="card">
-                    <h4>下北沢</h4>
-                    <img src="./assets/images/incafe.JPG" alt="Shimokitazawa">
-                    <p><span>Tags:</span> <a href="#">cafe, </a>
-                        <a href="#"> cozy,</a><a href="#"> pleasant</a></p>
-                </div> </a>
-                <a href="#"><div class="card">
-                    <h4>アムステルダム</h4>
-                    <img src="./assets/images/amsterdam1.jpg" alt="Amsterdam">
-                    <p><span>Tags:</span> <a href="#">minimalist, </a>
-                        <a href="#"> modern,</a><a href="#"> professional</a></p>
-                    </div> </a>
-            </div>
-            </article>
-                <div class="divider">
+                <div class="cardcontainer">
+                    <a href="#">
+                        <div id="cologne" class="card">
+                            <img src="./assets/images/In Cologne.JPG" alt="Cologne">
+                            <h4>ケルン</h4>
+                            <p>
+                                <span>タッグ:</span> 
+                                <a href="#">metropolitan,</a>
+                                <a href="#">sleek,</a>
+                                <a href="#"> professional</a>
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <h4>パリ</h4>
+                            <img src="./assets/images/louvre1.jpg" alt="Paris">
+                            <p>
+                                <span>タッグ:</span>
+                                <a href="#">vintage, </a>
+                                <a href="#">rustic,</a>
+                                <a href="#"> classy</a>
+                            </p>
+                        </div> 
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <h4>下北沢</h4>
+                            <img src="./assets/images/incafe.JPG" alt="Shimokitazawa">
+                            <p>
+                                <span>タッグ:</span> 
+                                <a href="#">cafe, </a>
+                                <a href="#"> cozy,</a>
+                                <a href="#"> pleasant</a>
+                            </p>
+                        </div> 
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <h4>アムステルダム</h4>
+                            <img src="./assets/images/amsterdam1.jpg" alt="Amsterdam">
+                            <p>
+                                <span>タッグ:</span> 
+                                <a href="#">minimalist, </a>
+                                <a href="#"> modern,</a>
+                                <a href="#"> professional</a>
+                            </p>
+                        </div> 
+                    </a>
                 </div>
+            </article>
+            
+            <div class="divider">
+            </div>
         <!-- END My Projects Section -->
 
         <!-- BEGIN Contact Section -->
-            <article>    
-                <div class="headings">
-                    <h1 class="sectionlabel">お問合せ</h1>
-                </div>
-                <div class="contact">
-                    <nav>
-                        <ul >
-                            <li><a href="#">(+1)555-555-5555</a></li>
-                            <li><a href="#">email@address.com</a></li>
-                            <li><a href="#">GitHub</a></li>
-                            <li><a href="#">Resume</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </article>
-                <div class="divider">
-                </div>
+        <article id="contact">    
+            <div class="headings">
+                <h1 class="sectionlabel">お問合せ</h1>
+            </div>
+            <nav class="contact">
+                <ul>
+                    <li><a href="#">(+1)555-555-5555</a></li>
+                    <li><a href="#">email@address.com</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">履歴書</a></li>
+                </ul>
+            </nav>
+        </article>
+            <div class="divider">
+            </div>
         <!-- END Contact Section -->
       </section>
        
     </main>
     <footer>
+        <p><a href="#top">戻る</a></p>
     </footer>
 </body>
 </html>
