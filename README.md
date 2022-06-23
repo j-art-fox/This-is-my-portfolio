@@ -10,8 +10,9 @@ This project showcases web-development work by the author, Jordan Ring-Sakabe an
 
 * **Application** This project provided the opportunity to experience the entire process of assembling a web application from nothing to functioning application and provided multiple insights into web-development concepts such as wire-framing, ui and ux, and more which were previously unknown to me.
 
-## Preview
+## ENGLISH Preview
 ![Portfolio Screenshot ENG](./assets/images/app%20preview%20eng.png)
+## JAPANESE Preview
 ![Portfolio Screenshot JPN](./assets/images/app%20preview%20jp.png)
 
 ## URL
