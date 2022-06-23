@@ -176,8 +176,8 @@ body {
     /* END ABOUT ME */
 
     /* BEGIN WORK */
-    #cologne img{
-      filter: grayscale(100%);
+    #horiseon {
+      flex: 75%;
     }
     
     .cardcontainer{

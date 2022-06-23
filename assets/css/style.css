@@ -1,339 +1,354 @@
-:root {
-  
-}
+:root {}
 
-* a{
+* a {
   border: none;
-  text-decoration:none;
-  color:#000000;
+  text-decoration: none;
+  color: #000000;
 }
 
 body {
   display: flex;
   justify-content: flex-start;
-    flex-direction: column;
-    margin: 0;
-    min-height: 100vh;
-  }
-  
-  /* Beginning of Header */
-  header {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1%;
-  }
-  
-  header h1{
-    border: dashed;
-    padding: 8px;
-  } 
-  
-  ul a {
-    margin:0% 1% 0% 1%;
-  }
-  
-      /* START of Navigation Modifiers for Header and Contact section */
-  #main-nav{
-    margin: 16px;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+}
 
-  }
-  nav a {
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 10px;
-    transition: 200ms ease-in-out;
-     }
-  
-  nav a:hover {
-    background-color: grey;
-    transition: 200ms ease-in-out;
-    color:white;
-  }
-  
-  nav li{
-    width: fit-content;
-    transition: 200ms ease-in-out;   
-  }
-  
-  nav li:hover{
-    color: white;
-    transition: 200ms ease-in-out;
-  }
-        /* END of Navigation Modifiers for Header and Contact section */
-  
-  header h1:hover {
-    cursor:pointer;
-  }
-  
-  .mainnav {
-   display: flex;
-   min-width: 300px;
-   align-items:center
-  }
+/* Beginning of Header */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+}
 
-  #flag{
-    font-size: 24px;
-    transform: translate(0, -5px)
-  }
-  
-  /* End of header */
-  
-  /* Headers */
-    h1 {
-      font-size: 2rem;
-      font-family: 'Fredoka One', cursive;
-      flex-basis:auto;
-    } 
-      
-    h2 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-      min-width: fit-content;  
-    }
+header h1 {
+  border: dashed;
+  padding: 8px;
+}
 
-  /* Headers */
+ul a {
+  margin: 0% 1% 0% 1%;
+}
 
-  /* BODY */
-    section {
-      padding: 0 16px;
-    }
-    
-    article {
-      display: flex;
-      justify-content: space-between;
-      padding: 8px 0;
-    }
+/* START of Navigation Modifiers for Header and Contact section */
+#main-nav {
+  margin: 16px;
 
-    /* Banner Details */
-    .image-wrapper{
-      position:relative;
-    }
+}
 
-    .imagelabel {
-      position:absolute;
-      font-size: 4rem;
-      font-family: 'Zen Maru Gothic', sans-serif;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: fit-content;
-    }
+nav a {
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  transition: 200ms ease-in-out;
+}
 
-    #bannerimage { 
-      width: 100%;
-      height: auto;
-      opacity: 0.3;
-    }
-    /* END BANNER DETAILS */
+nav a:hover {
+  background-color: grey;
+  transition: 200ms ease-in-out;
+  color: white;
+}
 
-    /* ABOUT ME */
+nav li {
+  width: fit-content;
+  transition: 200ms ease-in-out;
+}
 
-    #portfolio-picture{
-      max-width: 320px;
-      border-radius: 16px;
-      transition: ease-in-out 200ms;
-      filter: drop-shadow(10px 10px 4px rgb(198, 198, 198));
-    }
+nav li:hover {
+  color: white;
+  transition: 200ms ease-in-out;
+}
 
-    #portfolio-picture:hover{
-      filter: drop-shadow(10px 10px 4px rgb(128, 128, 128));
-      transition: ease-in-out 200ms;
-    }
+/* END of Navigation Modifiers for Header and Contact section */
 
-    article h2,h3,p {
-      margin:1%;
-      right: 5%;
-    }
+header h1:hover {
+  cursor: pointer;
+}
 
-    .headings{
-      flex: 1 0 200px;
-      margin-right: 16px;
-    }
+.mainnav {
+  display: flex;
+  min-width: 300px;
+  align-items: center
+}
 
-    .sectionlabel {
-      padding: 8px;
-      border: dashed;
-      width:fit-content;
-    }
+#flag {
+  font-size: 24px;
+  transform: translate(0, -5px)
+}
 
-    .aboutmedetails{
-      flex-shrink: 1;
-      align-items: center;
-    }
+/* End of header */
+
+/* Headers */
+h1 {
+  font-size: 2rem;
+  font-family: 'Fredoka One', cursive;
+  flex-basis: auto;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  min-width: fit-content;
+}
+
+/* Headers */
+
+/* BODY */
+section {
+  padding: 0 16px;
+}
+
+article {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+/* Banner Details */
+.image-wrapper {
+  position: relative;
+}
+
+.imagelabel {
+  position: absolute;
+  font-size: 4rem;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+}
+
+#bannerimage {
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+}
+
+/* END BANNER DETAILS */
+
+/* ABOUT ME */
+
+#portfolio-picture {
+  max-width: 320px;
+  border-radius: 16px;
+  transition: ease-in-out 200ms;
+  filter: drop-shadow(10px 10px 4px rgb(198, 198, 198));
+}
+
+#portfolio-picture:hover {
+  filter: drop-shadow(10px 10px 4px rgb(128, 128, 128));
+  transition: ease-in-out 200ms;
+}
+
+article h2,
+h3,
+p {
+  margin: 1%;
+  right: 5%;
+}
+
+.headings {
+  flex: 1 0 200px;
+  margin-right: 16px;
+}
+
+.sectionlabel {
+  padding: 8px;
+  border: dashed;
+  width: fit-content;
+}
+
+.aboutmedetails {
+  flex-shrink: 1;
+  align-items: center;
+}
 
 
-    .divider {
-      border-bottom: solid 2px grey;
-      width: 100%;
-    }
-    /* END ABOUT ME */
+.divider {
+  border-bottom: solid 2px grey;
+  width: 100%;
+}
 
-    /* BEGIN WORK */
-      
-    #cologne {
-      flex: 75%;
-    }
-    .cardcontainer{
-      display:flex;
-      flex-wrap: wrap;
-    }
-    
-    .card{
-      position: relative;
-      flex: 1 0 300px;
-      padding: 10px;
-      text-align: left;
-      height:fit-content;
-      opacity:calc(100%);
-      transition: ease-in-out 200ms;
-    }
+/* END ABOUT ME */
 
-    h4{
-      color:white;
-    }
+/* BEGIN WORK */
 
-    .card h4{
-      position: absolute;
-      top: 2px;
-      left: 2px;
-      padding:16px;
-      background-color: rgb(0, 119, 119);
-      color: white;
-    }
+#horiseon {
+  flex: 75%;
+}
 
-    .card img{
-      width: 100%;
-      min-width: 40%;
-      
-    }
-    .card .tags{
-      position: absolute;
-      top: 52px;
-      left:2px;
-      color: rgb(44, 44, 44);
-      font-size: larger;
-      background-color: aquamarine;
-      padding: 4px;
-      transform: translate(16px, 0);
-      text-align: left;
-      max-width:min-content;
-    }
+.cardcontainer {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-    .card .coming-soon{
-      position: absolute;
-      top: 50%;
-      Left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      display:none;
-    }
-    .card:hover .coming-soon {
-      display: block;
-      font-size: larger;
-    } 
+.card {
+  position: relative;
+  flex: 1 0 300px;
+  padding: 10px;
+  text-align: left;
+  height: fit-content;
+  opacity: calc(100%);
+  transition: ease-in-out 200ms;
+}
 
-    .card span{
-      font-weight: bolder;
-    }
+h4 {
+  color: white;
+}
 
-    .card:hover{
-      opacity:calc(50%);
-      box-shadow: 2px 2px 4px #000000;
-      transition: ease-in-out 200ms;
-    }
+.card h4 {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  padding: 16px;
+  background-color: rgb(0, 119, 119);
+  color: white;
+}
 
-    .card a:hover{
-      color: blue;
-    }
-    
-    a:visited {
-      color: none;
-    }
+.card img {
+  width: 100%;
+  min-width: 40%;
+}
 
-    
+.card .tags {
+  position: absolute;
+  top: 52px;
+  left: 2px;
+  color: rgb(44, 44, 44);
+  font-size: larger;
+  background-color: aquamarine;
+  padding: 4px;
+  transform: translate(16px, 0);
+  text-align: left;
+  max-width: min-content;
+}
 
-      /* END WORK */
+.card .coming-soon {
+  position: absolute;
+  top: 50%;
+  Left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  display: none;
+}
 
-  /* Start contact */
-    .contact {
-      width: -moz-available;
-    }
-    
-    .contact ul{   
-      display:flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      
-    }
-    .contact a{
-      display: flex;
-      align-items: center;
-    }
-    .contact li{
-      flex: 1 0 100px;
-      flex-wrap:wrap;
-    }
-  /* End contact */
-  
-  /* Start FOOTER */
-  footer{
-    background: gray;
-    margin-top: 8px;
-  }
-  
-  footer p{
-    text-align: center;
-  
-  }
-  footer a{
-      color: white; 
-  }
-  footer a:hover{
-    box-shadow: #000000;
-  }
-  /* END FOOTER */
+.card:hover .coming-soon {
+  display: block;
+  font-size: larger;
+}
+
+.card span {
+  font-weight: bolder;
+}
+
+.card:hover {
+  opacity: calc(50%);
+  box-shadow: 2px 2px 4px #000000;
+  transition: ease-in-out 200ms;
+}
+
+.card a:hover {
+  color: blue;
+}
+
+a:visited {
+  color: none;
+}
+
+
+
+/* END WORK */
+
+/* Start contact */
+.contact {
+  width: -moz-available;
+}
+
+.contact ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.contact a {
+  display: flex;
+  align-items: center;
+}
+
+.contact li {
+  flex: 1 0 100px;
+  flex-wrap: wrap;
+}
+
+/* End contact */
+
+/* Start FOOTER */
+footer {
+  background: gray;
+  margin-top: 8px;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  box-shadow: #000000;
+}
+
+/* END FOOTER */
 
 /* END OF BODY */
 
 /* MEDIA QUERIES */
-  @media screen and (max-width: 768px) {
-    article{
-      flex-flow:column;
-      align-items:center;
-    }
-    .headings{
-      margin:8px;
-    }
-
-    .contact{
-      width:min-content;
-    }
-
-    .headings, .aboutmedetails{
-      flex: 100%;
-    }
-    header {
-      flex-direction:column;
-    }
-    .imagelabel {
-      font-size: 1.8rem;
-    }
-    .mainnav{
-      flex-flow:column;
-    }
-    .mainnav li{
-      height:100%;
-      padding:8px;
-    }
-    main{
-      flex-direction: column;
-      justify-content: center;
-      flex-wrap:wrap;
-    }
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
-  
-  
+  article {
+    flex-flow: column;
+    align-items: center;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  .headings {
+    margin: 8px;
+  }
+
+  .contact {
+    width: min-content;
+  }
+
+  .headings,
+  .aboutmedetails {
+    flex: 100%;
+  }
+
+  .imagelabel {
+    font-size: 1.8rem;
+  }
+
+  .mainnav {
+    flex-flow: column;
+  }
+
+  .mainnav li {
+    height: 100%;
+    padding: 8px;
+  }
+}
