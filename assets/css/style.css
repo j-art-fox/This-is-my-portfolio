@@ -172,6 +172,10 @@ body {
     /* END ABOUT ME */
 
     /* BEGIN WORK */
+      
+    #cologne {
+      flex: 75%;
+    }
     .cardcontainer{
       display:flex;
       flex-wrap: wrap;
@@ -183,7 +187,7 @@ body {
       padding: 10px;
       text-align: left;
       height:fit-content;
-      opacity:calc(75%);
+      opacity:calc(100%);
       transition: ease-in-out 200ms;
     }
 
@@ -205,7 +209,7 @@ body {
       min-width: 40%;
       
     }
-    .card p{
+    .card .tags{
       position: absolute;
       top: 52px;
       left:2px;
@@ -216,15 +220,27 @@ body {
       transform: translate(16px, 0);
       text-align: left;
       max-width:min-content;
-
     }
+
+    .card .coming-soon{
+      position: absolute;
+      top: 50%;
+      Left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      display:none;
+    }
+    .card:hover .coming-soon {
+      display: block;
+      font-size: larger;
+    } 
 
     .card span{
       font-weight: bolder;
     }
 
     .card:hover{
-      opacity:calc(100%);
+      opacity:calc(50%);
       box-shadow: 2px 2px 4px #000000;
       transition: ease-in-out 200ms;
     }
