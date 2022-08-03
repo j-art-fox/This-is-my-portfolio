@@ -194,6 +194,7 @@ p {
   height: fit-content;
   opacity: calc(100%);
   transition: ease-in-out 200ms;
+  max-width: 800px;
 }
 
 h4 {

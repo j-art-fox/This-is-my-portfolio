@@ -177,7 +177,8 @@ body {
 
     /* BEGIN WORK */
     #horiseon {
-      flex: 75%;
+      flex: 50%;
+      max-width: 800px;
     }
     
     .cardcontainer{
